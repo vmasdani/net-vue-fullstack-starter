@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  paytest:
+    image: #{image_name}
+    restart: unless-stopped
+    ports:
+      - "#{container_port}:8080"
