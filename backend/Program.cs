@@ -35,7 +35,7 @@ using (var scope = app.Services.CreateScope())
 }
 
 // A simple endpoint to test if the API is running
-app.MapGet("/", () => "Hello World!");
+// app.MapGet("/", () => "Hello World!");
 
 app.MapGet("/items", (AppDbContext ctx) => ctx.Items);
 
