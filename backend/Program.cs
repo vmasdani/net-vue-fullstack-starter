@@ -27,6 +27,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 var app = builder.Build();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+
 // Apply pending migrations automatically
 using (var scope = app.Services.CreateScope())
 {
